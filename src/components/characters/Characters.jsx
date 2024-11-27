@@ -11,6 +11,10 @@ const Characters = () => {
     return <p>Loading...</p>
   }
 
+  if(error){
+    return <p>Error loading: {error}</p>
+  }
+
   return (
     <>
     <div id="character-container">
