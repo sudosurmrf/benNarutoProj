@@ -11,7 +11,7 @@ const characterApi = api.injectEndpoints({
     getCharacter: build.query({
       query: (id) => `/character/${id}`,
       providesTags: ['Characters'],
-      transformResponse: (response) => response.data,
+      transformResponse: (response) => response.characters,
       transformErrorResponse: (error) => error,
     }),
   })
